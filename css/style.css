@@ -1,0 +1,344 @@
+/*///////////////////////////////////////////////////*/
+/*Todo///////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda', cursive;
+}
+body {
+    background-color: #000000;
+}
+
+/*///////////////////////////////////////////////////*/
+/*Header-Nav/////////////////////////////////////////*/
+/*///////////////////////////////////////////////////*/
+/*Contenedor*/
+.container-fluid {
+    background-color: #d3d3d3;
+}
+/*Navegador*/
+.header_nav_contenedor_navegador__div {
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+}
+/*Navegador a*/
+.header_nav_contenedor_navegador__div a {
+    margin: 5px;
+}
+/*///////////////////////////////////////////////////*/
+/*Footer/////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////*/
+/*Instagram*/
+.footer_contenedor__instagram {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 10px;
+}
+/*Link Instagram*/
+.footer_contenedor__instagram a {
+    align-self: center;
+    padding: 5px;
+}
+/*GitHub*/
+.footer_contenedor__email {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+/*Link GitHub*/
+.footer_contenedor__email a {
+    align-self: center;
+    padding: 5px;
+}
+/*Facebook*/
+.footer_contenedor__facebook {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: end;
+    padding: 10px;
+}
+/*Link Facebook*/
+.footer_contenedor__facebook a {
+    align-self: center;
+    padding: 5px;
+}
+/*Icons*/
+.footer_contenedor_div__icon {
+    height: 50px;
+    width: 50px;
+}
+/*//////////////////////////////////////////*/
+/*Index/////////////////////////////////////*/
+/*//////////////////////////////////////////*/
+
+/*Tamaño seccion*/
+.seccion-index {
+    padding: 100px;
+}
+/*Grid*/
+.seccion-index__article {
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    grid-template-rows: repeat(2, 1fr) 150px;
+    grid-template-areas: 
+    "seccion-index_article__img seccion-index_article__caracteristicas"
+    "seccion-index_article__img seccion-index_article__trailer"
+    "seccion-index_article__p seccion-index_article__p"
+    ;
+}
+/*img dovakhin*/
+.seccion-index_article__img {
+    grid-area: seccion-index_article__img;
+    display: flex;
+    justify-self: center;
+    margin-top: 30px;
+    border: 3px solid rgb(128, 128, 128);
+}
+/*Caracteristicas img in-game*/
+.seccion-index_article__caracteristicas {
+    grid-area: seccion-index_article__caracteristicas;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 75px 30px 75px;
+    border: 3px solid rgb(128, 128, 128);
+}
+/*Lista caracteristicas*/
+.seccion-index_article_caracteristicas__lista {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    line-height: 50px;
+}
+/*Img in-game*/
+.seccion-index_article_caracteristicas__img {
+    margin: 10px;
+    border: 3px solid rgb(128, 128, 128);
+}
+/*Trailer*/
+.seccion-index_article__trailer {
+    grid-area: seccion-index_article__trailer;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    border: 3px solid rgb(128, 128, 128);
+}
+/*Parrafo*/
+.seccion-index_article__p {
+    grid-area: seccion-index_article__p;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    border: 3px solid rgb(128, 128, 128);
+    width: 98%;
+}
+/*///////////////////////////////////////////*/
+/*Contenido//////////////////////////////////*/
+/*///////////////////////////////////////////*/
+
+/*Titulo-contenido*/
+.titulo-contenido {
+    color: rgb(128, 128, 128);
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+/*Grid-mapa*/
+.seccion-contenido__art-mapa {
+    display: grid;
+    grid-template-columns: 1000px 1fr;
+    grid-template-rows: 50px 470px;
+    grid-template-areas: 
+    "seccion-contenido_art-mapa__titulo-mapa seccion-contenido_art-mapa__titulo-mapa"
+    "seccion-contenido_art-mapa__p seccion-contenido_art-mapa__img"
+    ;
+}
+/*Titulo-mapa*/
+.seccion-contenido_art-mapa__titulo-mapa {
+    color: rgb(128, 128, 128);
+    padding: 0 0 5px 100px;
+    font-size: 30px;
+    grid-area: seccion-contenido_art-mapa__titulo-mapa;
+}
+/*Parrafo-mapa*/
+.seccion-contenido_art-mapa__p {
+    background-color: rgb(211, 211, 211);
+    font-size: 18px;
+    border: 3px solid rgb(128, 128, 128);
+    grid-area: seccion-contenido_art-mapa__p;
+    margin: 5px 5px 5px 100px;
+    padding: 10px;
+}
+/*Img-mapa*/
+.seccion-contenido_art-mapa__img {
+    grid-area: seccion-contenido_art-mapa__img;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    border: 3px solid rgb(128, 128, 128);
+}
+/*Grid-clases*/
+.seccion-contenido__art-clases {
+    display: flex;
+    flex-direction: column;
+}
+/*Titulo-clases*/
+.seccion-contenido_art-clases__titulo-clases {
+    color: rgb(128, 128, 128);
+    padding: 30px 0 5px 100px;
+    font-size: 30px;
+    grid-area: seccion-contenido_art-mapa__titulo-mapa;
+}
+/*Parrafo-clases*/
+.seccion-contenido_art-clases__p {
+    background-color: rgb(211, 211, 211);
+    margin: 0 100px 0 100px;
+    padding: 10px;
+    border: 3px solid rgb(128, 128, 128);
+    font-size: 18px;
+}
+/*Img-clases*/
+.seccion-contenido_art-clases__img {
+    margin: 10px 0 10px 0;
+}
+/*Titulo-expansiones*/
+.seccion-contenido__titulo-expansiones {
+    color: rgb(128, 128, 128);
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+}
+/*Dragonborn*/
+.seccion-contenido__art-dragonborn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 100px;
+    grid-template-rows: 50px 1fr 320px;
+    grid-template-areas: 
+    "seccion-contenido_art-dragonborn__titulo-dragonborn seccion-contenido_art-dragonborn__titulo-dragonborn"
+    "seccion-contenido_art-dragonborn__img seccion-contenido_art-dragonborn__p"
+    "seccion-contenido_art-dragonborn__img seccion-contenido_art-dragonborn__trailer"
+    ;
+    margin-bottom: 30px;
+}
+/*Titulo-dragonborn*/
+.seccion-contenido_art-dragonborn__titulo-dragonborn {
+    grid-area: seccion-contenido_art-dragonborn__titulo-dragonborn;
+    color: rgb(128, 128, 128);
+    font-size: 30px;
+    margin: 0 0 0 100px;
+    display: flex;
+    align-self: center;
+}
+/*Img-dragonborn*/
+.seccion-contenido_art-dragonborn__img {
+    grid-area: seccion-contenido_art-dragonborn__img;
+    margin: 0 0 0 100px;
+    border: 3px solid rgb(128, 128, 128);
+}
+/*Parrafo-dragonborn*/
+.seccion-contenido_art-dragonborn__p {
+    grid-area: seccion-contenido_art-dragonborn__p;
+    background-color: rgb(211, 211, 211);
+    margin: 15px;
+    padding: 10px;
+    border: 3px solid rgb(128, 128, 128);
+}
+/*Trailer-dragonborn*/
+.seccion-contenido_art-dragonborn__trailer {
+    grid-area: seccion-contenido_art-dragonborn__trailer;
+    display: flex;
+    justify-self: center;
+    border: 3px solid rgb(128, 128, 128);
+}
+/*Dawnguard*/
+.seccion-contenido__art-dawnguard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 100px;
+    grid-template-rows: 50px 1fr 320px;
+    grid-template-areas: 
+    "seccion-contenido_art-dawnguard__titulo-dawnguard seccion-contenido_art-dawnguard__titulo-dawnguard"
+    "seccion-contenido_art-dawnguard__img seccion-contenido_art-dawnguard__p"
+    "seccion-contenido_art-dawnguard__img seccion-contenido_art-dawnguard__trailer"
+    ;
+    margin-bottom: 30px;
+}
+/*Titulo-dawnguard*/
+.seccion-contenido_art-dawnguard__titulo-dawnguard {
+    grid-area: seccion-contenido_art-dawnguard__titulo-dawnguard;
+    color: rgb(128, 128, 128);
+    font-size: 30px;
+    margin: 0 0 0 100px;
+    display: flex;
+    align-self: center;
+}
+/*Img-dawnguard*/
+.seccion-contenido_art-dawnguard__img {
+    grid-area: seccion-contenido_art-dawnguard__img;
+    margin: 0 0 0 100px;
+    border: 3px solid rgb(128, 128, 128);
+}
+/*Parrafo-dawnguard*/
+.seccion-contenido_art-dawnguard__p {
+    grid-area: seccion-contenido_art-dawnguard__p;
+    background-color: rgb(211, 211, 211);
+    margin: 15px;
+    padding: 10px;
+    border: 3px solid rgb(128, 128, 128);
+}
+/*Trailer-dawnguard*/
+.seccion-contenido_art-dawnguard__trailer {
+    grid-area: seccion-contenido_art-dawnguard__trailer;
+    display: flex;
+    justify-self: center;
+    border: 3px solid rgb(128, 128, 128);
+}
+/*Hearthfire*/
+.seccion-contenido__art-hearthfire {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 100px;
+    grid-template-rows: 50px 1fr 320px;
+    grid-template-areas: 
+    "seccion-contenido_art-hearthfire__titulo-hearthfire seccion-contenido_art-hearthfire__titulo-hearthfire"
+    "seccion-contenido_art-hearthfire__img seccion-contenido_art-hearthfire__p"
+    "seccion-contenido_art-hearthfire__img seccion-contenido_art-hearthfire__trailer"
+    ;
+    padding-bottom: 30px;
+}
+/*Titulo-hearthfire*/
+.seccion-contenido_art-hearthfire__titulo-hearthfire {
+    grid-area: seccion-contenido_art-hearthfire__titulo-hearthfire;
+    color: rgb(128, 128, 128);
+    font-size: 30px;
+    margin: 0 0 0 100px;
+    display: flex;
+    align-self: center;
+}
+/*Img-hearthfire*/
+.seccion-contenido_art-hearthfire__img {
+    grid-area: seccion-contenido_art-hearthfire__img;
+    margin: 0 0 0 100px;
+    border: 3px solid rgb(128, 128, 128);
+}
+/*Parrafo-hearthfire*/
+.seccion-contenido_art-hearthfire__p {
+    grid-area: seccion-contenido_art-hearthfire__p;
+    background-color: rgb(211, 211, 211);
+    margin: 15px;
+    padding: 10px;
+    border: 3px solid rgb(128, 128, 128);
+}
+/*Trailer-hearthfire*/
+.seccion-contenido_art-hearthfire__trailer {
+    grid-area: seccion-contenido_art-hearthfire__trailer;
+    display: flex;
+    justify-self: center;
+    border: 3px solid rgb(128, 128, 128);
+}
