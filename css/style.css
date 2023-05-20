@@ -5,6 +5,7 @@
 *{
     padding: 0;
     margin: 0;
+    list-style: none;
     box-sizing: border-box;
     font-family: 'Merienda', cursive;
 }
@@ -28,9 +29,36 @@ body {
 .header_nav_contenedor_navegador__div a {
     margin: 5px;
 }
+/*Responsive header-nav*/
+/*Laptop 1024px*/
+@media (max-width:1024px) {
+    .header_nav_contenedor_a__img {
+        width: 450px;
+    }
+}
+/*Mobile 425px*/
+@media (max-width:425px) {
+    .header_nav_contenedor_a__img {
+        width: 390px;
+    }
+}
+/*Mobile 375px*/
+@media (max-width:375px) {
+    .header_nav_contenedor_a__img {
+        width: 350px;
+    }
+}
+/*Mobile 320px*/
+@media (max-width:320px) {
+    .header_nav_contenedor_a__img {
+        width: 300px;
+    }
+}
+
 /*///////////////////////////////////////////////////*/
 /*Footer/////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////*/
+
 /*Instagram*/
 .footer_contenedor__instagram {
     display: flex;
@@ -42,6 +70,8 @@ body {
 .footer_contenedor__instagram a {
     align-self: center;
     padding: 5px;
+    text-decoration: none;
+    color: #000000;
 }
 /*GitHub*/
 .footer_contenedor__email {
@@ -55,6 +85,8 @@ body {
 .footer_contenedor__email a {
     align-self: center;
     padding: 5px;
+    text-decoration: none;
+    color: #000000;
 }
 /*Facebook*/
 .footer_contenedor__facebook {
@@ -68,12 +100,26 @@ body {
 .footer_contenedor__facebook a {
     align-self: center;
     padding: 5px;
+    text-decoration: none;
+    color: #000000;
 }
 /*Icons*/
 .footer_contenedor_div__icon {
     height: 50px;
     width: 50px;
 }
+/*Responsive footer*/
+@media (max-width:768px) {
+    .footer_contenedor__email {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer_contenedor__facebook {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
 /*//////////////////////////////////////////*/
 /*Index/////////////////////////////////////*/
 /*//////////////////////////////////////////*/
@@ -139,6 +185,168 @@ body {
     justify-self: center;
     border: 3px solid rgb(128, 128, 128);
     width: 98%;
+}
+/*Responsive index*/
+/*Laptop 1440px*/
+@media (max-width:1440px) {
+    /*Grid*/
+    .seccion-index__article {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    grid-template-rows: 700px 400px 150px;
+    grid-template-areas: 
+    "seccion-index_article__img seccion-index_article__caracteristicas"
+    "seccion-index_article__trailer seccion-index_article__trailer"
+    "seccion-index_article__p seccion-index_article__p"
+    ;
+    }
+    /*Caracteristicas img in-game*/
+    .seccion-index_article__caracteristicas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+/*Laptop 1024px*/
+@media (max-width:1024px) {
+    /*Tamaño seccion*/
+    .seccion-index {
+    padding: 25px;
+    }
+    /*Grid*/
+    .seccion-index__article {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 675px 400px 350px;
+    grid-template-areas: 
+    "seccion-index_article__img seccion-index_article__caracteristicas"
+    "seccion-index_article__trailer seccion-index_article__trailer"
+    "seccion-index_article__p seccion-index_article__p"
+    ;
+    }
+    /*img dovakhin*/
+    .seccion-index_article__img {
+        margin: 15px 35px 15px 35px;;
+    }
+     /*Caracteristicas img in-game*/
+    .seccion-index_article__caracteristicas {
+        margin: 15px 35px 15px 35px;
+    }
+}
+/*Tablet*/
+@media (max-width:768px) {
+    /*Tamaño seccion*/
+    .seccion-index {
+    padding: 10px;
+    }
+    /*Grid*/
+    .seccion-index__article {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 600px 330px 400px 300px;
+        grid-template-areas: 
+        "seccion-index_article__img"
+        "seccion-index_article__caracteristicas"
+        "seccion-index_article__trailer"
+        "seccion-index_article__p"
+        ;
+    }
+    .seccion-index_article__img {
+        height: 525px;
+    }
+    /*Caracteristicas img in-game*/
+    .seccion-index_article__caracteristicas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }    
+    /*Lista caracteristicas*/
+    .seccion-index_article_caracteristicas__img {
+        align-self: center;
+    }
+    /*Img in-game*/
+    .seccion-index_article_caracteristicas__img {
+    margin: 10px;
+    border: 3px solid rgb(128, 128, 128);
+    width: 275px;
+    }
+}
+/*Mobile 425px*/
+@media (max-width:425px) {
+    /*Grid*/
+    .seccion-index__article {
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 350px 475px 400px 400px;
+        grid-template-areas: 
+        "seccion-index_article__img"
+        "seccion-index_article__caracteristicas"
+        "seccion-index_article__trailer"
+        "seccion-index_article__p"
+        ;
+    }
+    .seccion-index_article__img {
+        height: 300px;
+    }
+    /*Caracteristicas img in-game*/
+    .seccion-index_article__caracteristicas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .seccion-index_article_caracteristicas__lista {
+        font-size: 14px;
+    }
+    /*Trailer*/
+    .seccion-index_article__trailer {
+        width: 300px;
+        height: 300px;
+    }
+    /*Parrafo*/
+    .seccion-index_article__p {
+        font-size: 14px;
+    }
+}
+/*Mobile 375px*/
+@media (max-width:375px) {
+    /*Grid*/
+    .seccion-index__article {
+        display: grid;
+        grid-template-columns: 355px;
+        grid-template-rows: 350px 500px 400px 400px;
+        grid-template-areas: 
+        "seccion-index_article__img"
+        "seccion-index_article__caracteristicas"
+        "seccion-index_article__trailer"
+        "seccion-index_article__p"
+        ;
+    }
+    .seccion-index_article__img {
+        height: 300px;
+    }
+    .seccion-index_article_caracteristicas__img {
+        width: 90%;
+    }
+}
+/*Mobile 320px*/
+@media (max-width:320px) {
+    /*Grid*/
+    .seccion-index__article {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 350px 620px 300px 450px;
+        grid-template-areas: 
+        "seccion-index_article__img"
+        "seccion-index_article__caracteristicas"
+        "seccion-index_article__trailer"
+        "seccion-index_article__p"
+        ;
+    }
+    /*Trailer*/
+    .seccion-index_article__trailer {
+        width: 250px;
+        height: 250px;
+    }
 }
 /*///////////////////////////////////////////*/
 /*Contenido//////////////////////////////////*/
